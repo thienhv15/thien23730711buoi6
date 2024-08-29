@@ -6,10 +6,10 @@ Created on Thu Aug 22 14:25:39 2024
 """
 
 print('Nhâp vào giờ, phút, giây')
-a = float(input('Giờ = '))
-b = float(input('Phút = '))
-c = float(input('Giây = '))
-if  a == 0 and b == 0 and c == 0:
-    print('Không hợp lệ')  
-else:    
+a = int(input('Giờ = '))
+b = int(input('Phút = '))
+c = int(input('Giây = '))
+if 0 <=a <= 23 and 0 <= b <= 59  and 0 <= c <= 59:
     print('Số giây được đổi là', a * 3600 + b * 60 + c  )
+else:
+    print('Không hợp lệ')
